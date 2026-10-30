@@ -1,0 +1,15 @@
+[
+  {"name": "비피더스명장", "aliases": ["동원비피더스명장"], "manufacturer": "동원", "food_type": "발효유", "standard_food_name": "요구르트"},
+  {"name": "카스후레쉬", "aliases": ["카스후레쉬캔"], "manufacturer": "", "food_type": "맥주", "standard_food_name": "맥주"},
+  {"name": "발사믹올리브", "aliases": ["풀무원 발사믹올리브"], "manufacturer": "풀무원", "food_type": "소스", "standard_food_name": "드레싱"},
+  {"name": "오징어짬뽕", "aliases": ["농심 오징어짬뽕", "오징어짬뽕컵", "오징어짬뽕큰사발"], "manufacturer": "농심", "food_type": "유탕면", "standard_food_name": "라면"},
+  {"name": "신라면", "aliases": ["농심 신라면", "신라면컵", "신라면큰사발"], "manufacturer": "농심", "food_type": "유탕면", "standard_food_name": "라면"},
+  {"name": "안성탕면", "aliases": ["농심 안성탕면"], "manufacturer": "농심", "food_type": "유탕면", "standard_food_name": "라면"},
+  {"name": "너구리", "aliases": ["농심 너구리", "얼큰한너구리"], "manufacturer": "농심", "food_type": "유탕면", "standard_food_name": "라면"},
+  {"name": "짜파게티", "aliases": ["농심 짜파게티"], "manufacturer": "농심", "food_type": "유탕면", "standard_food_name": "라면"},
+  {"name": "진라면", "aliases": ["오뚜기 진라면", "진라면매운맛", "진라면순한맛"], "manufacturer": "오뚜기", "food_type": "유탕면", "standard_food_name": "라면"},
+  {"name": "참깨라면", "aliases": ["오뚜기 참깨라면"], "manufacturer": "오뚜기", "food_type": "유탕면", "standard_food_name": "라면"},
+  {"name": "불닭볶음면", "aliases": ["삼양 불닭볶음면", "까르보불닭볶음면"], "manufacturer": "삼양식품", "food_type": "유탕면", "standard_food_name": "라면"},
+  {"name": "서울우유", "aliases": ["서울우유협동조합 서울우유"], "manufacturer": "서울우유협동조합", "food_type": "우유", "standard_food_name": "우유"},
+  {"name": "국산콩두부", "aliases": ["풀무원 국산콩두부", "국산콩 두부"], "manufacturer": "풀무원", "food_type": "두부", "standard_food_name": "두부"}
+]

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "catalog": {
+    "version": "2026-06-04",
+    "source": "K-FIND:2026-06-04",
+    "source_page": "https://various.foodsafetykorea.go.kr/nutrient/general/down/list.do",
+    "database": {
+      "url": "",
+      "github_release": {
+        "repository": "euna22/fridiet",
+        "tag": "kfind-2026-06-04",
+        "asset": "products.sqlite3.zip"
+      },
+      "archive_member": "products.sqlite3",
+      "archive_sha256": "fbf919bfb5ac0596dd99e4644069ef66c8b54c75b579bb3c4b961f17c24dbe77",
+      "sha256": "b38264f88d35eee470f7a3528d48ae56d14d904251bbfa15cd05522f3660054b"
+    },
+    "xlsx": {
+      "path": "app/data/external/kfind_processed_foods_20260604.xlsx",
+      "sha256": "6e03e6a799712dba1b44fa6a3958fce83860e415a79f8895a2b5325f56759695"
+    }
+  }
+}

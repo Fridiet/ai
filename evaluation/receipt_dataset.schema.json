@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fridiet.local/schemas/receipt-evaluation-dataset.json",
+  "title": "Fridiet receipt OCR evaluation dataset",
+  "type": "object",
+  "required": ["version", "cases"],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "description": {
+      "type": "string"
+    },
+    "cases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/case"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "point": {
+      "type": "array",
+      "prefixItems": [
+        { "type": "number" },
+        { "type": "number" }
+      ],
+      "items": false
+    },
+    "ocrItem": {
+      "type": "object",
+      "required": ["text", "confidence", "box"],
+      "properties": {
+        "text": { "type": "string", "minLength": 1 },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "box": {
+          "type": "array",
+          "minItems": 4,
+          "items": { "$ref": "#/$defs/point" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "expectedItem": {
+      "type": "object",
+      "required": ["source_text", "include", "canonical_name"],
+      "properties": {
+        "source_text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "영수증에 실제로 인쇄된 상품 행의 상품명 부분"
+        },
+        "include": {
+          "type": "boolean",
+          "description": "재고 등록 후보로 선택해야 하는지 여부"
+        },
+        "canonical_name": {
+          "type": ["string", "null"],
+          "description": "include=true일 때 기대하는 표준 식재료명"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "case": {
+      "type": "object",
+      "required": ["id", "expected_items"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string"
+        },
+        "image_path": {
+          "type": "string",
+          "minLength": 1,
+          "description": "데이터셋 JSON 파일을 기준으로 한 상대 경로 또는 절대 경로"
+        },
+        "ocr_items": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/ocrItem" }
+        },
+        "expected_items": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/expectedItem" }
+        }
+      },
+      "oneOf": [
+        {
+          "required": ["image_path"],
+          "not": { "required": ["ocr_items"] }
+        },
+        {
+          "required": ["ocr_items"],
+          "not": { "required": ["image_path"] }
+        }
+      ],
+      "additionalProperties": false
+    }
+  }
+}

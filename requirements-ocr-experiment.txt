@@ -1,0 +1,4 @@
+# Optional local semantic OCR experiment. Production setup is unchanged.
+transformers==4.57.6
+sentencepiece==0.2.1
+scikit-learn==1.7.2

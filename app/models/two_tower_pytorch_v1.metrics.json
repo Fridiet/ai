@@ -1,0 +1,140 @@
+{
+  "model_version": "two_tower_pytorch_v1",
+  "training_data": {
+    "total_samples": 30752,
+    "split_counts": {
+      "test": 3844,
+      "train": 23064,
+      "validation": 3844
+    },
+    "scenario_counts": {
+      "BALANCED_PANTRY": 7688,
+      "EXPIRY_RESCUE": 7688,
+      "SPARSE_PANTRY": 7688,
+      "WELL_STOCKED": 7688
+    },
+    "goal_counts": {
+      "DIABETES_MANAGEMENT": 3726,
+      "GENERAL": 12817,
+      "LOW_SODIUM": 7491,
+      "WEIGHT_LOSS": 6718
+    },
+    "source_counts": {
+      "constraint_persona_v2": 30752
+    }
+  },
+  "validation": {
+    "query_count": 3844.0,
+    "recall_at_1": 0.746618,
+    "recall_at_5": 0.90999,
+    "recall_at_10": 0.945109,
+    "ndcg_at_5": 0.8378,
+    "ndcg_at_10": 0.84932,
+    "mrr": 0.820873,
+    "mean_rank": 3.729969
+  },
+  "validation_by_scenario": {
+    "BALANCED_PANTRY": {
+      "query_count": 961.0,
+      "recall_at_1": 0.808533,
+      "recall_at_5": 0.944849,
+      "recall_at_10": 0.969823,
+      "ndcg_at_5": 0.885829,
+      "ndcg_at_10": 0.894224,
+      "mrr": 0.87076,
+      "mean_rank": 2.619147
+    },
+    "EXPIRY_RESCUE": {
+      "query_count": 961.0,
+      "recall_at_1": 0.792924,
+      "recall_at_5": 0.938606,
+      "recall_at_10": 0.969823,
+      "ndcg_at_5": 0.875058,
+      "ndcg_at_10": 0.885314,
+      "mrr": 0.859486,
+      "mean_rank": 2.673257
+    },
+    "SPARSE_PANTRY": {
+      "query_count": 961.0,
+      "recall_at_1": 0.511967,
+      "recall_at_5": 0.78564,
+      "recall_at_10": 0.860562,
+      "ndcg_at_5": 0.66042,
+      "ndcg_at_10": 0.68476,
+      "mrr": 0.634989,
+      "mean_rank": 7.745057
+    },
+    "WELL_STOCKED": {
+      "query_count": 961.0,
+      "recall_at_1": 0.873049,
+      "recall_at_5": 0.970864,
+      "recall_at_10": 0.980229,
+      "ndcg_at_5": 0.929892,
+      "ndcg_at_10": 0.93298,
+      "mrr": 0.918255,
+      "mean_rank": 1.882414
+    }
+  },
+  "test": {
+    "query_count": 3844.0,
+    "recall_at_1": 0.751821,
+    "recall_at_5": 0.913892,
+    "recall_at_10": 0.94589,
+    "ndcg_at_5": 0.841064,
+    "ndcg_at_10": 0.851543,
+    "mrr": 0.823417,
+    "mean_rank": 4.046826
+  },
+  "test_by_scenario": {
+    "BALANCED_PANTRY": {
+      "query_count": 961.0,
+      "recall_at_1": 0.791883,
+      "recall_at_5": 0.951093,
+      "recall_at_10": 0.973985,
+      "ndcg_at_5": 0.880042,
+      "ndcg_at_10": 0.887437,
+      "mrr": 0.860382,
+      "mean_rank": 2.473465
+    },
+    "EXPIRY_RESCUE": {
+      "query_count": 961.0,
+      "recall_at_1": 0.793965,
+      "recall_at_5": 0.950052,
+      "recall_at_10": 0.975026,
+      "ndcg_at_5": 0.880707,
+      "ndcg_at_10": 0.888966,
+      "mrr": 0.862089,
+      "mean_rank": 2.320499
+    },
+    "SPARSE_PANTRY": {
+      "query_count": 961.0,
+      "recall_at_1": 0.537981,
+      "recall_at_5": 0.780437,
+      "recall_at_10": 0.843913,
+      "ndcg_at_5": 0.668784,
+      "ndcg_at_10": 0.689696,
+      "mrr": 0.647171,
+      "mean_rank": 9.880333
+    },
+    "WELL_STOCKED": {
+      "query_count": 961.0,
+      "recall_at_1": 0.883455,
+      "recall_at_5": 0.973985,
+      "recall_at_10": 0.990635,
+      "ndcg_at_5": 0.934722,
+      "ndcg_at_10": 0.940072,
+      "mrr": 0.924026,
+      "mean_rank": 1.513007
+    }
+  },
+  "ingredient_overlap_baseline_test": {
+    "query_count": 3844.0,
+    "recall_at_1": 0.758585,
+    "recall_at_5": 0.94667,
+    "recall_at_10": 0.973205,
+    "ndcg_at_5": 0.864633,
+    "ndcg_at_10": 0.873389,
+    "mrr": 0.841848,
+    "mean_rank": 2.245838
+  }
+}

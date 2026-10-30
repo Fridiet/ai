@@ -1,0 +1,7 @@
+[
+  {"quantity":1,"unit":"kg","expectedQuantity":1000,"expectedUnit":"g"},
+  {"quantity":1,"unit":"L","expectedQuantity":1000,"expectedUnit":"mL"},
+  {"quantity":0.5,"unit":"개","expectedQuantity":0.5,"expectedUnit":"개"},
+  {"quantity":500,"unit":"g","expectedQuantity":500,"expectedUnit":"g"},
+  {"quantity":0.1,"unit":"g","expectedQuantity":0.1,"expectedUnit":"g"}
+]
